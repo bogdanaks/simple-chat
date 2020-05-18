@@ -1,0 +1,94 @@
+.chat-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .dialogs {
+        width: 280px;
+        height: 100%;
+
+        &__search-inner {
+            height: 50px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        &__search-input {
+            height: 30px;
+            background-color: #353535;
+            border: none;
+            border-radius: 2%;
+            padding-left: 10px;
+            color: rgba(251, 249, 250, 0.575);
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+            width: 3px;
+            height: 2px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FD0054;
+            border: none;
+            border-radius: 50px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(187, 0, 62);
+        }
+        ::-webkit-scrollbar-thumb:active {
+            background: rgb(187, 0, 62);
+        }
+        ::-webkit-scrollbar-track {
+            background: #666666;
+            border: 0px none #ffffff;
+            border-radius: 50px;
+        }
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+        .dialog-items {
+            height: 530px;
+            overflow: auto;
+            overflow-x: hidden;
+            .dialog-item {
+                cursor: pointer;
+                &:hover {
+                    background-color: #353535;
+                }
+                height: 70px;
+                display: flex;
+                align-items: center;
+                &__inner {
+                    padding: 10px 20px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                &__photo-container {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    height: 50px;
+                    width: 50px;
+                    img {
+                        width: 50px;
+                    }
+                }
+                &__info {
+                    display: flex;
+                    flex-direction: column;
+                    width: 190px;
+                    padding-left: 10px;
+                }
+                &__name {
+                    color: #FD0054;
+                }
+                &__message {
+                    color: rgba(251, 249, 250, 0.5);
+                }
+            }
+        }
+    }
+
+    .messages {
+        width: 630px;
+        height: 100%;
+    }
+}
