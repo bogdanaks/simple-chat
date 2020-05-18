@@ -1,27 +1,37 @@
 .sidebar {
-    height: 580px;
-    width: 50px;
-    padding: 10px;
+    height: 600px;
+    width: 70px;
     display: flex;
     flex-direction: column;
     .sidebar-item {
+        padding: 10px;
+        font-size: 36px;
         height: 50px;
         width: 50px;
-        border-radius: 50%;
-        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .sidebar__photo {
+            border-radius: 50%;
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+            img {
+                width: 100%;
+            }
+        }
 
-        img {
-            width: 100%;
+        a {
+            color: #FD0054;
+            &:hover {
+                color: rgb(197, 0, 66);
+            }
         }
 
 
-
-
-        &--mb-1 {
-            margin-bottom: 1rem;
-        }
-        &--mb-2 {
-            margin-bottom: 2rem;
+        &--active {
+            background-color: #353535;
         }
         &--last-pos {
             margin-top: auto;
