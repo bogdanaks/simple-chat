@@ -3,6 +3,7 @@
     width: 70px;
     display: flex;
     flex-direction: column;
+    z-index: 999;
     .sidebar-item {
         padding: 10px;
         font-size: 36px;
