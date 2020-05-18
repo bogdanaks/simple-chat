@@ -1,0 +1,30 @@
+.sidebar {
+    height: 580px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    .sidebar-item {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+
+
+
+        &--mb-1 {
+            margin-bottom: 1rem;
+        }
+        &--mb-2 {
+            margin-bottom: 2rem;
+        }
+        &--last-pos {
+            margin-top: auto;
+        }
+    }
+}
