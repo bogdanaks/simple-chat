@@ -1,10 +1,17 @@
-.wrapper {
-    width: 1000px;
-    height: 600px;
-    background-color: #2B2024;
-    box-shadow: -7px 15px 18px -10px rgba(0,0,0,0.75);
-    border-radius: 1%;
-    overflow: hidden;
+.container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 80px;
+    .wrapper {
+        width: 1000px;
+        height: 600px;
+        background-color: #2B2024;
+        box-shadow: -7px 15px 18px -10px rgba(0,0,0,0.75);
+        border-radius: 1%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
 }

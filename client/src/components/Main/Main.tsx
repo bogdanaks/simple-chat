@@ -5,11 +5,13 @@ import Chat from './Chat/Chat'
 
 import './Main.scss'
 
-const Main = () => {
+const Main: React.FC = () => {
     return (
-        <div className="wrapper">
-            <Sidebar />
-            <Chat />
+        <div className="container">
+            <div className="wrapper">
+                <Sidebar />
+                <Chat />
+            </div>
         </div>
     )
 }
